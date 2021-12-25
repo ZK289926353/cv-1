@@ -1,7 +1,6 @@
 let html = document.querySelector('#html');
 let style = document.querySelector('#style');
-let string = `/* 你好，我是一名前端新人王小宝、王宝猪、王仔鸭
- 接下来我要加样式了
+let string = `/* 你好，我是一名前端新人
  我要加的样式是*/
 #div1{
     border:1px solid red;
