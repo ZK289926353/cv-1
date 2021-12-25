@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#demo {
+    word-break: break-all;
+}
+
+#div1 {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+#div1::before {
+    content: '';
+    display: block;
+    /* border: 1px solid red; */
+    position: absolute;
+}
+
+#div1::after {
+    content: '';
+    display: block;
+    /* border: 1px solid blue; */
+    position: absolute;
+}
+
+@media (max-width:500px) {
+    #html {
+        height: 50vh;
+        overflow: auto;
+    }
+    #div1Wrapper {
+        /* border: 1px solid red; */
+        height: 50vh;
+    }
+    #div1 {
+        /* border: 1px solid red; */
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
